@@ -1,0 +1,7 @@
+((synopsis "Bindings to libtess2.")
+ (author "Jubjub")
+ (category math)
+ (license "MIT")
+ (depends)
+ (test-depends)
+ (foreign-depends))

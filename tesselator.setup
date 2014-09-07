@@ -1,0 +1,7 @@
+(compile -s -O3 -d0 -ltess2 -J tesselator.scm)
+(compile -s -O3 -d0 tesselator.import.scm)
+
+(install-extension
+ 'tesselator
+ '("tesselator.so" "tesselator.import.so")
+ '((version "0.0.1")))
