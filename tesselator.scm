@@ -4,14 +4,14 @@
 
 (module tesselator *
   (import chicken scheme foreign)
-  (define-constant TESS_WINDING_ODD 0)
-  (define-constant TESS_WINDING_NONZERO 1)
-  (define-constant TESS_WINDING_POSITIVE 2)
-  (define-constant TESS_WINDING_NEGATIVE 3)
-  (define-constant TESS_WINDING_ABS_GEQ_TWO 4)
-  (define-constant TESS_POLYGONS 0)
-  (define-constant TESS_CONNECTED_POLYGONS 1)
-  (define-constant TESS_BOUNDARY_CONTOURS 2)
+  (define TESS_WINDING_ODD 0)
+  (define TESS_WINDING_NONZERO 1)
+  (define TESS_WINDING_POSITIVE 2)
+  (define TESS_WINDING_NEGATIVE 3)
+  (define TESS_WINDING_ABS_GEQ_TWO 4)
+  (define TESS_POLYGONS 0)
+  (define TESS_CONNECTED_POLYGONS 1)
+  (define TESS_BOUNDARY_CONTOURS 2)
   (define TESSalloc-userData
     (foreign-lambda*
       (c-pointer void)
